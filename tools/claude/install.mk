@@ -12,4 +12,4 @@ install-macos:
 
 install-windows:
 	@echo "Installing Claude on Windows"
-	curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+	irm https://claude.ai/install.ps1 | iex
