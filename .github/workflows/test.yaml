@@ -33,5 +33,10 @@ jobs:
         run: choco install make
         shell: powershell
 
+      - name: Add msstore (Windows)
+        if: runner.os == 'Windows'
+        run: winget source add -n msstore msstore
+        shell: powershell
+
       - name: Install ${{ matrix.tool }}
         run: make ${{ matrix.tool }}
