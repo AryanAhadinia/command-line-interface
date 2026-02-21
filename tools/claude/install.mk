@@ -1,4 +1,4 @@
-.PHONY: install install-linux install-macos install-windows
+.PHONY: install install-linux install-macos install-windows test-installation
 
 install: install-$(OS_TYPE)
 
@@ -13,3 +13,6 @@ install-macos:
 install-windows:
 	@echo "Installing Claude on Windows"
 	npm install -g @anthropic-ai/claude-code
+
+test-installation:
+	claude --version

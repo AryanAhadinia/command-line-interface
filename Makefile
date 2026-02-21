@@ -1,4 +1,4 @@
-.PHONY: install claude
+.PHONY: claude
 
 
 UNAME_S := $(shell uname -s 2>/dev/null)
@@ -16,8 +16,6 @@ endif
 export OS_TYPE
 
 
-install:
-	@echo "Usage: make install TOOL=claude"
-
 claude:
 	$(MAKE) -f tools/claude/install.mk install
+	$(MAKE) -f tools/claude/install.mk test-installation
