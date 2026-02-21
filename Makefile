@@ -23,3 +23,7 @@ claude:
 kimi:
 	$(MAKE) -f tools/kimi/install.mk install
 	$(MAKE) -f tools/kimi/install.mk test-installation
+
+qwen-code:
+	$(MAKE) -f tools/qwen-code/install.mk install
+	$(MAKE) -f tools/qwen-code/install.mk test-installation
