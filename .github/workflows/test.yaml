@@ -41,3 +41,6 @@ jobs:
         if: runner.os == 'Windows'
         run: make ${{ matrix.tool }}
         shell: powershell
+
+      - name: Test ${{ matrix.tool }}
+        run: make test-${{ matrix.tool }}
