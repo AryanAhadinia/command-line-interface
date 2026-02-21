@@ -11,7 +11,6 @@ install-macos:
 install-windows:
 	curl -L -o download_cli.ps1 https://raw.githubusercontent.com/block/goose/main/download_cli.ps1
 	powershell -NoProfile -ExecutionPolicy Bypass -Command ".\download_cli.ps1"
-	[Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";$env:USERPROFILE\.local\bin", "User")
 
 test-installation:
 	@echo "TODO"
