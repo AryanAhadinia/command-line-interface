@@ -34,13 +34,7 @@ jobs:
         shell: powershell
 
       - name: Install ${{ matrix.tool }}
-        if: runner.os != 'Windows'
         run: make install-${{ matrix.tool }}
-
-      - name: Install ${{ matrix.tool }} (Windows)
-        if: runner.os == 'Windows'
-        run: make install-${{ matrix.tool }}
-        shell: powershell
 
       - name: Test ${{ matrix.tool }}
-        run: make test-${{ matrix.tool }}
+        run: make test-installation-${{ matrix.tool }}
