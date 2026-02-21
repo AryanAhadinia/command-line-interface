@@ -20,14 +20,18 @@ claude:
 	$(MAKE) -f tools/claude/install.mk install
 	$(MAKE) -f tools/claude/install.mk test-installation
 
+goose:
+	$(MAKE) -f tools/goose/install.mk install
+	$(MAKE) -f tools/goose/install.mk test-installation
+
 kimi:
 	$(MAKE) -f tools/kimi/install.mk install
 	$(MAKE) -f tools/kimi/install.mk test-installation
 
-qwen-code:
-	$(MAKE) -f tools/qwen-code/install.mk install
-	$(MAKE) -f tools/qwen-code/install.mk test-installation
-
 open-interpreter:
 	$(MAKE) -f tools/open-interpreter/install.mk install
 	$(MAKE) -f tools/open-interpreter/install.mk test-installation
+
+qwen-code:
+	$(MAKE) -f tools/qwen-code/install.mk install
+	$(MAKE) -f tools/qwen-code/install.mk test-installation
