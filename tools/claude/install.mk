@@ -12,4 +12,4 @@ install-macos:
 
 install-windows:
 	@echo "Installing Claude on Windows"
-	winget install Anthropic.ClaudeCode
+	npm install -g @anthropic-ai/claude-code
