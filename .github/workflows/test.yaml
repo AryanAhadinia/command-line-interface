@@ -35,7 +35,7 @@ jobs:
 
       - name: Install ${{ matrix.tool }}
         if: runner.os != 'Windows'
-        run: make ${{ matrix.tool }}
+        run: make install-${{ matrix.tool }}
 
       - name: Install ${{ matrix.tool }} (Windows)
         if: runner.os == 'Windows'
