@@ -20,6 +20,10 @@ claude:
 	$(MAKE) -f tools/claude/install.mk install
 	$(MAKE) -f tools/claude/install.mk test-installation
 
+crush:
+	$(MAKE) -f tools/crush/install.mk install
+	$(MAKE) -f tools/crush/install.mk test-installation
+
 goose:
 	$(MAKE) -f tools/goose/install.mk install
 	$(MAKE) -f tools/goose/install.mk test-installation
