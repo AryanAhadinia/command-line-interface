@@ -1,4 +1,5 @@
-.PHONY: install install-linux install-macos install-windows
+.PHONY: install claude
+
 
 UNAME_S := $(shell uname -s 2>/dev/null)
 
@@ -12,18 +13,11 @@ else
 	OS_TYPE := unknown
 endif
 
+export OS_TYPE
+
+
 install:
-	@echo "Detected OS: $(OS_TYPE)"
-	$(MAKE) install-$(OS_TYPE)
+	@echo "Usage: make install TOOL=claude"
 
-install-linux:
-	@echo "Running Linux install..."
-
-install-macos:
-	@echo "Running macOS install..."
-
-install-windows:
-	@echo "Running Windows install..."
-
-install-unknown:
-	@echo "Unsupported OS"
+claude:
+	$(MAKE) -f tools/claude/install.mk install
