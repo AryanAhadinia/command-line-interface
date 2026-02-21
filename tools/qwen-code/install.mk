@@ -9,7 +9,7 @@ install-macos:
 	curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen.sh | bash
 
 install-windows:
-	curl -fsSL -o %TEMP%\install-qwen.bat https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen.bat && %TEMP%\install-qwen.bat
+	npm install -g @qwen-code/qwen-code@latest
 
 test-installation:
 	qwen --version
