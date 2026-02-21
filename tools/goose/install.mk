@@ -11,6 +11,7 @@ install-macos:
 install-windows:
 	curl -L -o download_cli.ps1 https://raw.githubusercontent.com/block/goose/main/download_cli.ps1
 	powershell -ExecutionPolicy Bypass -File download_cli.ps1
+	$env:PATH += ";$env:USERPROFILE\.local\bin"
 
 test-installation:
 	goose --version
