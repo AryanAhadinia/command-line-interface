@@ -27,3 +27,7 @@ kimi:
 qwen-code:
 	$(MAKE) -f tools/qwen-code/install.mk install
 	$(MAKE) -f tools/qwen-code/install.mk test-installation
+
+open-interpreter:
+	$(MAKE) -f tools/open-interpreter/install.mk install
+	$(MAKE) -f tools/open-interpreter/install.mk test-installation
