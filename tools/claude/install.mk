@@ -12,4 +12,4 @@ install-macos:
 
 install-windows:
 	@echo "Installing Claude on Windows"
-	curl -fsSL https://claude.ai/install.cmd | cmd.exe
+	winget install Anthropic.ClaudeCode
