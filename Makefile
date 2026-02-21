@@ -19,3 +19,7 @@ export OS_TYPE
 claude:
 	$(MAKE) -f tools/claude/install.mk install
 	$(MAKE) -f tools/claude/install.mk test-installation
+
+kimi:
+	$(MAKE) -f tools/kimi/install.mk install
+	$(MAKE) -f tools/kimi/install.mk test-installation

@@ -11,8 +11,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        tool: [claude]
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        tool: [claude, kimi]
 
     steps:
       - name: Checkout
