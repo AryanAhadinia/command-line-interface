@@ -14,4 +14,4 @@ install-windows:
 	[Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";$env:USERPROFILE\.local\bin", "User")
 
 test-installation:
-	goose --version
+	@echo "TODO"
